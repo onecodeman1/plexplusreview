@@ -1,0 +1,150 @@
+body{
+	margin:0;
+	color:#6a6f8c;
+	background:#c8c8c8;
+	font:600 16px/18px 'Open Sans',sans-serif;
+}
+*,:after,:before{box-sizing:border-box}
+.clearfix:after,.clearfix:before{content:'';display:table}
+.clearfix:after{clear:both;display:block}
+a{color:inherit;text-decoration:none}
+
+.coolio-form{
+	width:100%;
+	margin:auto;
+	max-width:525px;
+	min-height:670px;
+	position:relative;
+	background:url(../img/plex_request_BG.jpg) no-repeat center;
+	box-shadow:0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
+}
+.coolio-form-html{
+	width:100%;
+	height:100%;
+	position:absolute;
+	padding:90px 70px 50px 70px;
+	background:rgba(66,66,66,.9);
+}
+.coolio-form-html .movie-html-htm,
+.coolio-form-html .tv-show-html-htm{
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	position:absolute;
+	transform:rotateY(180deg);
+	backface-visibility:hidden;
+	transition:all .4s linear;
+}
+.coolio-form-html .movie-html,
+.coolio-form-html .tv-show-html,
+.coolio-enter-form-form .group .check{
+	display:none;
+}
+.coolio-form-html .tab,
+.coolio-enter-form-form .group .label,
+.coolio-enter-form-form .group .button{
+	text-transform:uppercase;
+}
+.coolio-form-html .tab{
+	font-size:22px;
+	margin-right:15px;
+	padding-bottom:5px;
+	margin:0 15px 10px 0;
+	display:inline-block;
+	border-bottom:2px solid transparent;
+}
+.coolio-form-html .movie-html:checked + .tab,
+.coolio-form-html .tv-show-html:checked + .tab{
+	color:#fff;
+	border-color:#fdb00b;
+}
+.coolio-enter-form-form{
+	min-height:345px;
+	position:relative;
+	perspective:1000px;
+	transform-style:preserve-3d;
+}
+.coolio-enter-form-form .group{
+	margin-bottom:15px;
+}
+.coolio-enter-form-form .group .label,
+.coolio-enter-form-form .group .input,
+.coolio-enter-form-form .group .button{
+	width:100%;
+	color:#fff;
+	display:block;
+}
+.coolio-enter-form-form .group .input,
+.coolio-enter-form-form .group .button{
+	border:none;
+	padding:15px 20px;
+	border-radius:25px;
+	background:rgba(255,255,255,.1);
+}
+.coolio-enter-form-form .group input[data-type="year"]{
+	text-security:circle;
+	-webkit-text-security:circle;
+}
+.coolio-enter-form-form .group .label{
+	color:#aaa;
+	font-size:12px;
+}
+.coolio-enter-form-form .group .button{
+	background:#fdb00b;
+}
+.coolio-enter-form-form .group label .icon{
+	width:15px;
+	height:15px;
+	border-radius:2px;
+	position:relative;
+	display:inline-block;
+	background:rgba(255,255,255,.1);
+}
+.coolio-enter-form-form .group label .icon:before,
+.coolio-enter-form-form .group label .icon:after{
+	content:'';
+	width:10px;
+	height:2px;
+	background:#fff;
+	position:absolute;
+	transition:all .2s ease-in-out 0s;
+}
+.coolio-enter-form-form .group label .icon:before{
+	left:3px;
+	width:5px;
+	bottom:6px;
+	transform:scale(0) rotate(0);
+}
+.coolio-enter-form-form .group label .icon:after{
+	top:6px;
+	right:0;
+	transform:scale(0) rotate(0);
+}
+.coolio-enter-form-form .group .check:checked + label{
+	color:#fff;
+}
+.coolio-enter-form-form .group .check:checked + label .icon{
+	background:#fdb00b;
+}
+.coolio-enter-form-form .group .check:checked + label .icon:before{
+	transform:scale(1) rotate(45deg);
+}
+.coolio-enter-form-form .group .check:checked + label .icon:after{
+	transform:scale(1) rotate(-45deg);
+}
+.coolio-form-html .movie-html:checked + .tab + .tv-show-html + .tab + .coolio-enter-form-form .movie-html-htm{
+	transform:rotate(0);
+}
+.coolio-form-html .tv-show-html:checked + .tab + .coolio-enter-form-form .tv-show-html-htm{
+	transform:rotate(0);
+}
+
+.hr{
+	height:2px;
+	margin:60px 0 50px 0;
+	background:rgba(255,255,255,.2);
+}
+.foot-lnk{
+	text-align:center;
+}	

@@ -1,0 +1,58 @@
+html {
+	background-color: #69D2E7;
+	color: white;
+	font-family: Abel;
+	
+}
+
+.container{
+	position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 25%;
+  height: 50%;
+  text-align: center;
+}
+
+.quote-source{
+  text-align: right;
+  font-style: italic;
+  margin-top: -15px;
+}
+
+button{
+	background-color: #FA6900;
+	color: white;
+	border: none;
+	padding: 15px;
+  margin-top: 20px;
+}
+
+a:visited{
+	color: white;
+	text-decoration: none;
+}
+
+a{
+  color: white;
+  text-decoration: none;
+}
+
+.quote{
+  color: black;
+}
+
+.hasQuote{
+  text-align: left;
+  background-color: #A7DBD8;
+  padding: .15em 1em .15em 1em;
+}
+
+.fa-twitter{
+  padding-right: 2px;
+}
+
+button:hover{
+  background-color: #F38630;
+}
