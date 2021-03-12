@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/faviconfavicon-16x16.png">
+    <link rel="manifest" href="img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+        
+    <title>Message</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/templatemo-style.css"/>
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/inspo.js"></script>
+    <script type="text/javascript" src="js/buttonchanger.js"></script>
+
+</head>
+<!--Get outta town-->
+<body>
+    <div class="tm-page-container mx-auto">
+        <header class="tm-header text-center">
+            <h1 class="tm-title text-uppercase">Message Center</h1>
+            <p class="text-success"><i>Leave me a nice message. Or a mean one, I can take it.</i></p>
+        </header>
+
+        <section class="tm-section">
+            <nav class="tm-nav">
+                <ul>
+                  <li>
+                    <a href="index.html"><span class="tm-nav-deco"></span>Home</a>
+                  </li>
+                  <li>
+                    <a href="part1.html"><span class="tm-nav-deco"></span>Part 1</a>
+                  </li>
+                  <li>
+                    <a href="part2.html"><span class="tm-nav-deco"></span>Part 2</a>
+                  </li>
+                  <li>
+                    <a href="part3.html"><span class="tm-nav-deco"></span>Part 3</a>
+                  </li>
+                  <li>
+                    <a href="part4.html"><span class="tm-nav-deco"></span>Part 4</a>
+                  </li>
+                  <li class="active">
+                    <a href="contact.html"><span class="tm-nav-deco"></span>Contact</a>
+                  </li>
+                  <li>
+                    <a href="plex_request.html"><span class="tm-nav-deco"></span>Plex Request</a>
+                  </li>
+                  <li>
+                    <a href="https://www.youtube.com/watch?v=tVqTm8_MURk&feature=youtu.be" target="_blank"><span class="tm-nav-deco"></span>BrownLounge Tutorial</a>
+                  </li>
+                </ul>
+              </nav>
+            <div class="tm-content-container">
+                <div class="mb-0 tm-img-overlay-wrap">
+                    <div class="tm-img-overlay"></div>
+                    <div class="tm-img-overlay-text text-white p-5">
+                        <div class="quote text-center">
+                            <h4 class="quote-content">Generate an inspirational quote</h4>
+                          <p class="quote-source"></p>
+                          <button class="get-quote-button">Generate Quote</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="tm-content">
+                    <form action="https://formspree.io/xjvenlek" method="POST" class="tm-contact-form">
+                        <div class="form-group">
+                            <input type="text" id="contact_name" name="the_dingus_who_sent_me_this_message"
+                                class="form-control rounded-0 border-top-0 border-right-0 border-left-0"
+                                placeholder="Name" required="" />
+                        </div>
+
+                        <div class="form-group">
+                            <textarea rows="6" id="sender_message" name="sender_message"
+                                class="form-control rounded-0 border-top-0 border-right-0 border-left-0"
+                                placeholder="Message..." required=""></textarea>
+                        </div>
+
+                        <div class="form-group text-right">
+                            <button type="submit" class="btn btn-primary rounded-0">
+                                Submit
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    
+        <footer>
+            <span>Hello</span>
+        </footer>
+    </div>
+  
+</body>
+
+</html>

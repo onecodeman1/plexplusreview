@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/faviconfavicon-16x16.png">
+    <link rel="manifest" href="img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+        
+    <title>Message</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" />
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/formSTYLE.css"/>
+
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/inspo.js"></script>
+    <script type="text/javascript" src="js/buttonchanger.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+
+
+</head>
+<!--Get outta town-->
+<div class="coolio-form">
+	<div class="coolio-form-html">
+		<input id="tab-1" type="radio" name="tab" class="movie-html" checked><label for="tab-1" class="tab">Movie</label>
+		<input id="tab-2" type="radio" name="tab" class="tv-show-html"><label for="tab-2" class="tab">TV Show</label>
+		<div class="coolio-enter-form-form">
+			<div class="movie-html-htm">
+        <form action="https://formspree.io/xleprwlr" method="POST" autocomplete="off">
+				<div class="group">
+					<label for="user" class="label">Name</label>
+					<input id="user" type="text" class="input" required="" name="Name">
+				</div>
+				<div class="group">
+					<label for="pass" class="label">Year</label>
+					<input id="pass" type="number" min="1888" max="2022" class="input" required="" name="Year">
+				</div>
+				<div class="group">
+					<input type="submit" class="button"  style="cursor:pointer" value="Submit">
+				</div>
+			 
+			</div>
+			<div class="tv-show-html-htm">
+				<header class="text-center">
+                    <h1 class="text-uppercase">Plex Request Center (in Progress)</h1>
+                    <p class="text-success">Request any movie and/or tv show and if there is a torrent available, it will be 
+                      automatically uploaded to my Plex server.</p>
+                    <p>It will take minimum 30 min so keep that in mind. Probably will take longer.</p>
+                    <p>Server doesn't have space for TV shows at the moment. Only request movies for now please.</p>
+                    <p>I know the website looks trash right now, I'll update when I have more time.</p>
+                    <p>MAKE SURE YOU SPELL THE THE NAME RIGHT. IF YOU THINK YOU MADE A MISTAKE, JUST SUBMIT THE MOVIE AGAIN, ITS OK TO DO IT MULTIPLE TIMES.</p>
+                    <a href="index.html" target="_blank"><span></span>Home</a>
+                  </header>
+            </div>
+        </form>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+
+</html>
